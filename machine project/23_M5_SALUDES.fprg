@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jm"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 09:39:52 AM"/>
+        <attribute name="created" value="am07Sk0tUEM7MjAxOS0xMi0wMzswOToxMDozNyBBTTsxODI1"/>
+        <attribute name="edited" value="am07Sk0tUEM7MjAxOS0xMi0wMzswOTozOTo1MiBBTTsxOzE5NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3" type="Integer" array="False" size=""/>
+            <declare name="current" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please input your 1st number&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Please input your 2nd number&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Please input your 3rd number&quot;" newline="True"/>
+            <input variable="num3"/>
+            <if expression="num1&gt;=num2">
+                <then>
+                    <if expression="num1&lt;num3">
+                        <then>
+                            <output expression="&quot;2nd number has the minimum value&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;3rd number has the minimum value&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="num2&lt;num3">
+                        <then>
+                            <output expression="&quot;1st number has the minimum value&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;3rd number has the minimum value&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
